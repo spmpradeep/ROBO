@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .body{
+            background-color: rgb(240, 50, 183);
+            border:5px;
+            height:300px;
+            width: 170px;
+            border-radius: 45%;
+            margin:auto;
+            position: relative;
+            top:150px;
+        }
+        .head{
+            background-color: rgb(217, 18, 235);
+            border:5px;
+            height:100px;
+            width: 170px;
+            border-radius: 45%;
+            margin:auto;
+            position: relative;
+           bottom:250px;
+        }
+        .ant1{
+            /* background-color: rgba(0, 0, 0, 0.61); */
+          
+            border-left:10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 130px solid #555;
+    height:100px;
+     width:0px;
+     margin: auto;
+     position: relative;
+     bottom: 578px;
+     left: 40px;
+     transform: rotate(7deg);
+        }
+        .ant2{
+            /* background-color: rgba(0, 0, 0, 0.61); */
+          
+            border-left:10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 130px solid #555;
+    height:100px;
+     width:0px;
+     margin: auto;
+     position: relative;
+     bottom: 805px;
+     left:-40px;
+     transform: rotate(-7deg);
+        }
+        .eye1{
+            border-radius:500px ;
+            height: 15px;
+            width: 30px;
+            background:linear-gradient(rgb(2, 2, 2),rgb(255, 255, 255));
+            margin: auto;
+            position: relative;
+            bottom: 780px;
+            left: 35px;
+        }
+        .eye2{
+            border-radius:500px ;
+            height: 15px;
+            width: 30px;
+            background:linear-gradient(rgb(0, 0, 0),rgb(255, 255, 255));
+            margin: auto;
+            position: relative;
+            bottom: 795px;
+            left: -35px;
+        }
+        .mouth{
+            background-color:rgb(58, 57, 57);
+            height: 40px;
+            width: 70px;
+            border-radius: 50%;
+            position: relative;
+            bottom:-39px;
+            margin: auto;
+        }
+        .mdummy{
+            background-color: rgb(255, 255, 255);
+            height: 50px;
+            width: 70px;
+            border-radius: 50%;
+            margin: auto;
+        }
+        .mot{
+           position: relative;
+           top:-840px;
+          
+        }
+        .hand1{
+            background-color:rgb(240, 50, 183);
+            height: 150px;
+            width: 15px;
+            position: relative;
+            bottom: 780px;
+            margin: auto;
+            left: -80px;
+            transform: rotate(30deg);
+            border-radius: 20px;
+            animation-name: han1;
+            animation-duration: 1s;
+            animation-iteration-count:infinite
+        }
+       @keyframes han1 {
+        0%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+        background: rgb(14, 13, 13);
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:rgb(240, 50, 183);
+    }
+    50%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+        background: rgb(29, 28, 28);
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:rgb(240, 50, 183);
+    }
+    100%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+        background: rgb(20, 19, 19);
+    }
+
+       }
+        
+        /* .h1{
+            background-color:rgb(0, 0, 0) ;
+            height: 30px;
+            width: 30px;
+            border-radius: 20px;
+            margin: auto;
+            position: relative;
+            top: -1246px;
+            left: -150px;
+            animation-name: han2;
+            animation-duration: 2s; */
+        /* }
+        @keyframes han2 {
+        0%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+        background: white;
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:rgb(240, 50, 183);
+    }
+    50%{
+        transform: rotate(-90deg);
+        transform-origin: top center; */
+        /* background: white;
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:rgb(240, 50, 183);
+    }
+    100%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+        background: white;
+    }
+} */
+        .hand2{
+            background-color:rgb(240, 50, 183);
+            height: 150px;
+            width: 15px;
+            position: relative;
+            bottom: 929px;
+            margin: auto;
+            left: 80px;
+            transform: rotate(-30deg);
+            border-radius: 20px;
+            animation-name: han2;
+            animation-duration: 1s;
+            animation-iteration-count:infinite
+           
+        }
+        @keyframes han2 {
+        0%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+        background: rgb(14, 13, 13);
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:rgb(240, 50, 183);
+    }
+    50%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+        background: rgb(29, 28, 28);
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:rgb(240, 50, 183);
+    }
+    100%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+        background: rgb(20, 19, 19);
+    }
+}
+        .leg1{
+            background-color:rgb(240, 50, 183);
+            height: 150px;
+            width: 15px;
+            border-radius: 20px;
+            position: relative;
+            bottom: 840px;
+            margin: auto;
+            left: 30px; 
+            animation-name: le1;
+            animation-duration: 1s;
+            animation-iteration-count:infinite
+           
+        }
+        @keyframes le1 {
+        0%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+        background: rgb(14, 13, 13);
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:rgb(240, 50, 183);
+    }
+    50%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+        background: rgb(29, 28, 28);
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:rgb(240, 50, 183);
+    }
+    100%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+        background: rgb(20, 19, 19);
+    }}
+        .leg2{
+            background-color:rgb(240, 50, 183);
+            height: 150px;
+            width: 15px;
+            border-radius: 20px;
+            position: relative;
+            bottom: 990px;
+
+            margin: auto;
+            left: -30px;
+             animation-name: le2;
+            animation-duration: 1s;
+            animation-iteration-count:infinite
+        }
+        @keyframes le2 {
+        0%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+        background: rgb(228, 61, 184);
+    }
+    25%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:rgb(240, 50, 183);
+    }
+    50%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+        background: rgb(231, 24, 155);
+    }
+    75%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        background:rgb(244, 85, 164);
+    }
+    100%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+        background: rgb(245, 9, 186);
+    }}
+        /* .h2{
+            background-color:rgb(0, 0, 0) ;
+            height: 30px;
+            width: 30px;
+            border-radius: 20px;
+            position: relative;
+            margin: auto;
+            top: -1276px;
+            left: 150px;
+        }
+        .l1{
+            background-color:rgb(0, 0, 0) ;
+            height: 30px;
+            width: 30px;
+            border-radius: 20px;
+            position: relative;
+            margin: auto;
+            bottom: 1055px;
+            left: 30px;
+        }
+        .l2{
+            background-color:rgb(0, 0, 0) ;
+            height: 30px;
+            width: 30px;
+            border-radius: 20px;
+            position: relative;
+            bottom: 1085px;
+            margin: auto;
+            left: -30px;
+        } */
+        .cer1{
+            background-color:rgb(244, 37, 175) ;
+            height: 100px;
+            width: 170px;
+            border-radius: 45%;
+            margin: auto;
+            position: relative;
+            top: 90px;
+        }
+        .cer2{
+            background-color:rgb(10, 8, 10) ;
+            height: 100px;
+            width: 170px;
+            border-radius: 45%;
+            margin: auto;
+        }
+        .cer{
+            position: relative;
+            top: -1400px;
+
+        }
+        .top{
+            animation-name:hed ;
+            animation-duration: 0.7s;
+            animation-iteration-count:infinite
+        }
+        @keyframes hed {
+       
+        0%{
+        transform: translateX(20px) ;
+    }
+    25%{
+        transform: translateY(-20px) ;
+    }
+    50%{
+        transform: translateY(20px) ;
+    }
+    75%{
+        transform: translateY(-20px) ;
+    }
+    100%{
+        transform: translateX(-20px) ;
+    }           
+        }
+        .gro{
+            background-color: brown;
+            height: 50px;
+            position: relative;
+            bottom: 1150px;
+            
+        }
+        .bg{
+            background: linear-gradient(rgb(216, 212, 203),rgba(184, 100, 22, 0.658),rgb(209, 32, 32),rgb(192, 26, 192) );
+           
+        }
+        .bog{
+                position: relative;
+                top: 100px;
+        }
+        .aud{
+            margin: auto;
+            position: relative;
+            bottom: 1150px;         
+        }
+    </style>
+</head>
+<body class="bg">
+    <h1 class="tit">Dancing ROBO</h1>
+    <div class="bog">
+        <div class="bg">
+    <div class="body"></div>
+    <div class="top">
+        <div class="head"></div>
+<div class="ant1"></div>
+<div class="ant2"></div>
+<div class= "eye1"></div>
+<div class= "eye2"></div>
+
+<div class="mot">
+    <div class="mouth"></div>
+    <div class="mdummy"></div>
+</div>
+
+</div>
+    
+<div class="hand1"></div>
+
+<div class="hand2"></div>
+<div class="leg1"></div>
+<div class="leg2"></div>
+<div class="h1"></div>
+<div class="h2"></div>
+<div class="l1"></div>
+<div class="l2"></div>
+
+<div class="cer">
+    <div class="cer1"></div>
+    <div class="cer2"></div>
+</div>
+</div>
+    </div>
+   
+</body>
+</html>
